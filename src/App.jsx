@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import { Route,Routes } from 'react-router-dom'
 import Login from './pages/login'
 import Signup from './pages/signup'
+import Navbar from './components/navbar'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
   return (
     
       <div>
+        <Navbar/>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/login" element={<Login/>}/>
@@ -24,4 +26,5 @@ function App() {
 }
 
 export default App
+
 
